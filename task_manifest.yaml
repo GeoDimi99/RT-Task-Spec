@@ -1,0 +1,13 @@
+schedule:
+  name: "Tasks Example"
+  version: "0.0.1"
+  description: "Simple Tasks Examples"
+
+  tasks:
+    - id: "init_core"
+      policy: "fifo"
+      priority: 30
+      depends_on: []
+      inputs: []
+      outputs: []
+        
