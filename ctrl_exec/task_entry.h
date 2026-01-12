@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 int task_main(){
-    printf("Hi! I'm init_core");
+    printf("Hi! I'm comm_proto");
     return 0;
 }
 

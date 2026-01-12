@@ -6,8 +6,24 @@ schedule:
   tasks:
     - name: "init_core"
       policy: "fifo"
-      priority: 30
+      priority: 2
       depends_on: []
       inputs: []
       outputs: []
+
+    - name: "comm_proto"
+      policy: "fifo"
+      priority: 2
+      depends_on: []
+      inputs: []
+      outputs: []
+
+    - name: "ctrl_exec"
+      policy: "fifo"
+      priority: 2
+      depends_on: []
+      inputs: []
+      outputs: []
+        
+        
         
