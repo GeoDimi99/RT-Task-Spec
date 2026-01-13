@@ -4,26 +4,29 @@ schedule:
   description: "Simple Tasks Examples"
 
   tasks:
-    - name: "init_core"
+    - name: "sum"
       policy: "fifo"
       priority: 2
       depends_on: []
-      inputs: {1, 2}
-      outputs: {0}
+      inputs:
+        a: 1
+        b: 2
 
-    - name: "comm_proto"
+    - name: "multiply"
       policy: "fifo"
       priority: 2
       depends_on: []
-      inputs: {1}
-      outputs: {}
+      inputs:
+        a: 2
+        b: 2
 
-    - name: "ctrl_exec"
+    - name: "divide"
       policy: "fifo"
       priority: 2
       depends_on: []
-      inputs: {}
-      outputs: {}
+      inputs:
+        a: 4
+        b: 2
         
         
         
