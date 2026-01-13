@@ -8,14 +8,14 @@ schedule:
       policy: "fifo"
       priority: 2
       depends_on: []
-      inputs: {}
-      outputs: {}
+      inputs: {a: 1, b: 2}
+      outputs: {result: 0}
 
     - name: "comm_proto"
       policy: "fifo"
       priority: 2
       depends_on: []
-      inputs: {}
+      inputs: {a: 1}
       outputs: {}
 
     - name: "ctrl_exec"
